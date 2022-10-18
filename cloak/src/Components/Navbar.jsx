@@ -1,7 +1,6 @@
 import React from "react"
 import { BsTelephoneFill } from "react-icons/bs";
 import {Link} from 'react-router-dom';
-
 function Navbar() {
   return (
     <>
@@ -10,9 +9,9 @@ function Navbar() {
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light bg-light p-2">
               <BsTelephoneFill />
-              <a className="navbar-brand px-2" href="/">
+              <Link  className="navbar-brand px-2" to="/">
                 CloakSolutions
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -27,24 +26,24 @@ function Navbar() {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item active">
-                    <a className="nav-link" href="/">
+                    <Link  className="nav-link" to="/" >
                       Home <span className="sr-only"></span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item ">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/Friends">
                       Friends
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
