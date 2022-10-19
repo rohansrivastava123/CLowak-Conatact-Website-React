@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <div className="container-fluid nav_bg">
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="">
             <nav className="navbar navbar-expand-lg navbar-light bg-light p-2">
               <BsTelephoneFill />
               <Link  className="navbar-brand px-2" to="/">
@@ -24,7 +24,7 @@ function Navbar() {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav ml-auto">
                   <li className="nav-item active">
                     <Link  className="nav-link" to="/" >
                       Home <span className="sr-only"></span>

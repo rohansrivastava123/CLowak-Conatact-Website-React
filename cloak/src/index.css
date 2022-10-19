@@ -13,6 +13,9 @@ code {
 }
  *{
   font-family: 'Rubik', sans-serif;
+  margin:0px;
+  box-sizing: border-box;
+  padding:0px;
  }
  .menu_active{
   font-weight:bold;
@@ -21,5 +24,47 @@ code {
  .hometext{
   position:relative;
   top:15rem;
-  left:5rem;
+ }
+ .boxcard{
+  border:2px solid black;
+  height:fit-content;
+  width:250px;
+  padding:10px;
+ }
+ .boxcard p{
+  margin-bottom: 0px;
+
+ }
+ .cardsection{
+  display:flex;
+  gap:5rem;
+  flex-flow: row wrap;
+  padding:2rem;
+  
+}
+.cardsection::after
+{
+  flex: auto;
+  content:"";
+  
+ }
+ .tag{
+  display: flex;
+  align-items: center;
+  gap:3px;
+ }
+ .clickbtns{
+  display: flex;
+  justify-content: space-evenly;
+  gap:25px;
+  background-color: rgb(182, 182, 182);
+  padding:10px;
+  border:2px solid black;
+ }
+ .btns{
+  cursor:pointer;
+ }
+ .hbtn{
+  background-color: rgb(182, 182, 182);
+  border:none;
  }

@@ -1,5 +1,6 @@
 import React from "react"
 import img from "../images/frinedsweb.png"
+import {Link} from 'react-router-dom';
 function Home() {
   return (
     <>
@@ -18,10 +19,8 @@ function Home() {
                     {" "}
                     Clowak is here to make <strong>New</strong> Friends .
                   </h4>
-                  <div className="">
-                    <a href="/" className="btn-get-started">
-                      <button>Get Started</button>
-                    </a>
+                  <div>
+                    <Link to='/Friends'><button className=" btn btn-primary" >Get Started</button></Link>
                   </div>
                 </div>
                 <div className="hometext col-lg-6 order-1 order-lg-2 header-img">
